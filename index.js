@@ -23,9 +23,8 @@ function fectchWeatherData(){
   infoText.classList.add("pending")
 //...get server and return api response
   fetch(api)
-  .then(response => response.json())
+  .then(response => response.json()
   .then(result => weatherDetails(result)) 
-  console.log(response.json());
 }
 
 function weatherDetails(info){
